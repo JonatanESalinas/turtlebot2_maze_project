@@ -1,0 +1,8 @@
+<launch>
+    <!-- Help the turtlebot get out of the maze launch file-->
+    <!-- By launching this file, the whole program will begin.-->
+    <include file="$(find my_turtlebot_main)/launch/action_server_odom.launch"/>
+    <include file="$(find my_turtlebot_main)/launch/obstacle_service_server.launch"/>
+    <node pkg="my_turtlebot_main" type="main.py" name="main_turtlebot_node" output="screen">
+    </node>
+</launch>

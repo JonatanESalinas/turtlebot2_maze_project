@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="my_turtlebot_main" type="obstacle_service_server.py" name="obstacle_service_server_node" output="screen">
+    </node>
+</launch>
